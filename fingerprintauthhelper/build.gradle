@@ -1,7 +1,5 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.novoda.bintray-release'
 apply plugin: 'kotlin-android'
-apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'maven-publish'
 
 // group='com.github.pro100svitlo'
@@ -48,7 +46,7 @@ afterEvaluate{
     publishing{
         publications{
             release(MavenPublication){
-                from components.release
+                from components.findByName('release')
 
                 groupId='com.github.SoumikBhatt'
                 artifactId = 'FingerprintAuthHelper'
