@@ -36,10 +36,10 @@ tasks.withType(Javadoc) {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    testCompile 'junit:junit:4.12'
-    compile "com.android.support:appcompat-v7:$supportLibrary"
-    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.12'
+    implementation "com.android.support:appcompat-v7:$supportLibrary"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 }
 
 afterEvaluate{
