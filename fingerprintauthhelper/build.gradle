@@ -4,8 +4,8 @@ apply plugin: 'kotlin-android'
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'maven-publish'
 
-group='com.github.pro100svitlo'
-version = '1.2.2'
+// group='com.github.pro100svitlo'
+// version = '1.2.2'
 
 android {
     compileSdkVersion project.compileSdk
@@ -52,7 +52,7 @@ afterEvaluate{
 
                 groupId='com.github.SoumikBhatt'
                 artifactId = 'FingerprintAuthHelper'
-                version = '1.0.0'
+                version = '1.0.2'
             }
         }
     }
